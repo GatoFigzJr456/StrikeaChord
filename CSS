@@ -1,4 +1,6 @@
-/* Base styles */
+/* -------------------
+   Base Styles
+------------------- */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -27,6 +29,11 @@ h1 {
   margin-bottom: 10px;
 }
 
+h2 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
 nav ul {
   list-style: none;
   padding: 0;
@@ -44,6 +51,7 @@ nav a {
   text-decoration: none;
   color: #0077cc;
   font-weight: bold;
+  padding: 5px 10px;
 }
 
 nav a:hover {
@@ -70,22 +78,55 @@ footer {
   font-size: 0.9em;
 }
 
-/* Mobile responsiveness */
+/* -------------------
+   Mobile Responsiveness
+------------------- */
 @media (max-width: 600px) {
+
+  /* Headings */
   h1 {
     font-size: 1.5em;
   }
 
+  h2 {
+    font-size: 1.2em;
+  }
+
+  /* Navigation */
   nav ul {
     flex-direction: column;
     align-items: center;
+    padding: 0;
   }
 
+  nav li {
+    margin: 10px 0;
+  }
+
+  nav a {
+    font-size: 1em;
+    padding: 8px 12px;
+  }
+
+  /* Logo */
   .logo {
     max-width: 120px;
+    padding: 0 10px;
   }
 
+  /* Images */
   .section-img {
     max-width: 100%;
+    padding: 0 10px;
+  }
+
+  /* Main padding */
+  main {
+    padding: 15px 10px;
+  }
+
+  /* Footer padding */
+  footer {
+    padding: 15px 10px;
   }
 }
